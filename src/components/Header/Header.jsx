@@ -13,6 +13,7 @@ function Header() {
             <h3 className='text-2xl text-opacity-70 text-white font-[600] '>Welcome to</h3>
             <h1 className='text-7xl p-2 text-white font-[700] '>Bears N Bulls</h1>
             <h2 className='text-2xl text-opacity-70 text-white px-3 font-[500]'>Where Strategy Meets Opportunity</h2>
+            <button className='p-2 px-3 mt-5 bg-white text-black font-inter font-[500] rounded-3xl'>Learn More</button>
           </div>
         </div>
       </div>

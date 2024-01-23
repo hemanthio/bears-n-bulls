@@ -1,14 +1,26 @@
 
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Header from './components/Header/Header'
+
+import Home from './components/Home/Home.jsx'
+import About from './components/About/About.jsx'
+import Events from './components/Events/Events.jsx'
+import News from './components/News/News.jsx'
+import Members from './components/Members/Members.jsx'
+import { BrowserRouter as Router,Routes,Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-   <>
-   <Navbar/>
-   <Header/>
-   </>
+  <Router>
+   
+  <Routes>
+  <Route path='/' element={ <Home /> }  />
+  <Route path='/about' element={<About/>}/>
+  <Route path='/Members'  element={<Members />}/>
+  <Route path='/events' element={ <Events/> }/>
+  <Route path='/news' element={ <News /> }/>
+  <Route path='/events' element={ <Events/> }/>
+  </Routes>
+  </Router>
   )
 }
 
