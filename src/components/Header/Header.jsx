@@ -5,14 +5,16 @@ import { useEffect } from 'react';
 
 function Header() {
 
-useEffect(()=>{
-  const animateText=()=>{
-const tl = gsap.timeline();
-tl.from(".bears-n-bulls",{opacity:0,y:300,duration:1})
-  }
-  animateText();
-},[])
+  useEffect(() => {
+    const animateText = () => {
+      const tl = gsap.timeline();
+      tl.fromTo(".bears-n-bulls,.welcome-text,.strategy-meets",{opacity:0,x:-300},{opacity:1,x:0,stagger:1} );
+      
 
+    };
+
+    animateText();
+  }, []);
   return (
     <>
       <div className='relative   w-full h-screen bg-green-800 text-center'>
